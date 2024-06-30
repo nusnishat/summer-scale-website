@@ -243,7 +243,21 @@
                         <p class="font-semibold">Total:<span id="grand-total-price" class="ms-2">0</span></p>
                     </div>
                     <hr>
-                    <div id="btn-purchase" class="bg-fuchsia-700 hidden my-2 px-4 py-2 text-center cursor-pointer text-white font-semibold rounded-md"> Make Purchase</div>
+                    <div id="btn-purchase" onclick="my_modal_5.showModal()" class="bg-fuchsia-700 hidden my-2 px-4 py-2 text-center cursor-pointer text-white font-semibold rounded-md"> Make Purchase</div>
+                    <!-- Open the modal using ID.showModal() method -->
+                    <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+                      <div class="modal-box text-center">
+                        <img src="/images/congo.png" class="mx-auto" alt="">
+                        <h3 class="text-lg font-bold">Congratulations!</h3>
+                        <p class="py-4">You have successfully purchased</p>
+                        <div class="modal-action">
+                          <form method="dialog">
+                            <!-- if there is a button in form, it will close the modal -->
+                            <button class="btn">Close</button>
+                          </form>
+                        </div>
+                      </div>
+                    </dialog>
                 </div>
             </div>
         </div>
